@@ -1,0 +1,109 @@
+/* Simple website styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  padding: 24px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #1f3a93;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 24px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #1f3a93;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  gap: 24px;
+}
+
+section.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 16px 40px rgba(29, 47, 90, 0.08);
+}
+
+section.card h2 {
+  margin-bottom: 12px;
+  color: #1b3c65;
+}
+
+section.card p {
+  color: #4d586f;
+}
+
+button.primary {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  background: #1f3a93;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button.primary:hover {
+  background: #162d70;
+  transform: translateY(-1px);
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  color: #6a7380;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(34, 34, 34, 0.08);
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
